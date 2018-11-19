@@ -7,7 +7,7 @@ let userSchema = new Schema({
     email: { type: String, required: true },
     password: { type: String, required: true },
     isActive: { type: Boolean, required: true },
-    createdON: { type: Data, default: Date.now }
+    createdON: { type: Date, default: Date.now }
 })
 
 const User = mongoose.model('User', userSchema)
